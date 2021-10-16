@@ -49,6 +49,8 @@ class CabDriver():
         state_encod[m + t + state[2]] = 1
         
         return state_encod
+    
+    
      
 
 
