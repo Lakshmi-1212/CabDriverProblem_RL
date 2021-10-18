@@ -162,7 +162,6 @@ class CabDriver():
         
         self.elapsed_time += trip_time
          
-        #print(f'4DEBUG - trip:({state},{action},{reward},{new_state}), time:{self.elapsed_time},{episode_done}')
             
         return new_state
 
@@ -188,8 +187,6 @@ class CabDriver():
     
 
     def reset(self):
-        #print(f'RESETTING')
-         
         self.state_init = random.choice([(0,0,0), (1,0,0), (2,0,0), (3,0,0), (4,0,0)])
         self.elapsed_time = 0
         return self.state_init
